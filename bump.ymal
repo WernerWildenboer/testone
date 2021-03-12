@@ -1,7 +1,7 @@
 name: Bump version in git
 
 on:
-  push:
+  merge:
     branches: 
     - master
 jobs:
