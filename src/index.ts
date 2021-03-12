@@ -2,7 +2,7 @@ const { DEV = "" } = process.env;
 const isDev: boolean = DEV === "true";
 
 if (isDev) {
-  console.log("Hoi");
+  console.log("Hello");
 } else {
   console.log("Hi");
 }
