@@ -1,6 +1,6 @@
 {
   "name": "service-template-ts",
-  "version": "0.0.3-1",
+  "version": "0.0.3-2",
   "description": "Typscript Simplified Template",
   "main": "index.js",
   "repository": {
