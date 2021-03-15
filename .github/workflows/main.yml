@@ -23,9 +23,9 @@ jobs:
       - name: Update version
         run: npm version prerelease
       - name: Commit version update
-        run: |
+         run: |
           git config --global user.name 'WernerWildenboer'
-          git config --global user.email 'WernerWildenboer@users.noreply.github.com'
+          git config --global user.email 'wwildenboer@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "updated version"
           git push
