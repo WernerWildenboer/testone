@@ -30,5 +30,4 @@ jobs:
         run: |
           git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
-          git remote set-url origin git@github.com:ambrite/ambrite.io.git
           git push
