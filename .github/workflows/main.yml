@@ -26,9 +26,12 @@ jobs:
           git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
           npm version prerelease
-          git add *
-          git rev-parse --abbrev-ref HEAD
-          git remote set-url origin git@github.com:WernerWildenboer/testone.git
+          
+      - name: Commit version update
+        run: |
+          git config --global user.name 'WernerWildenboer'
+          git config --global user.email 'wwildenboer@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "updated version"
           git push
           # Name of the branch to use, if different from the one that triggered the workflow
