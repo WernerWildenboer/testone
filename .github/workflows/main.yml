@@ -12,4 +12,5 @@ jobs:
               uses: epeli/npm-release@v1
               with:
                   type: prerelease
+                  token: ${{ secrets.NPM_TOKEN }}
                 
