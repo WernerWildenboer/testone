@@ -21,7 +21,10 @@ jobs:
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
       - name: Update version
-        run: npm version prerelease
+        run: |
+          git config --global user.name 'WernerWsdsdildenboer'
+          git config --global user.email 'wwildenboer@gmail.com'
+          npm version prerelease
       - name: Add & Commit
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@701772d3525172d14fba9e972806915ec0eb6954
