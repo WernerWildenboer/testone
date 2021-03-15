@@ -32,6 +32,7 @@ jobs:
           git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add . 
           git commit -am "updated version"
           git push
           # Name of the branch to use, if different from the one that triggered the workflow
