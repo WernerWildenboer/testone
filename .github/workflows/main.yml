@@ -22,7 +22,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Update version
         run: |
-          git config --global user.name 'WernerWsdsdildenboer'
+          git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
           npm version prerelease
       - name: Add & Commit
