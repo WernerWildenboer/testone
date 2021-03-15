@@ -25,6 +25,8 @@ jobs:
           git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
           npm version prerelease
+          git commit -am "updated version"
+          git push
       - name: Add & Commit
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@701772d3525172d14fba9e972806915ec0eb6954
