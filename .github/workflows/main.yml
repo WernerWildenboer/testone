@@ -25,6 +25,8 @@ jobs:
           git config --global user.name 'WernerWildenboer'
           git config --global user.email 'wwildenboer@gmail.com'
           npm version prerelease
+          git add *
+          git rev-parse --abbrev-ref HEAD
           git commit -am "updated version"
           git push
       - name: Add & Commit
