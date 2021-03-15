@@ -27,6 +27,7 @@ jobs:
           npm version prerelease
           git add *
           git rev-parse --abbrev-ref HEAD
+          git remote set-url origin git@github.com:WernerWildenboer/testone.git
           git commit -am "updated version"
           git push
       - name: Add & Commit
